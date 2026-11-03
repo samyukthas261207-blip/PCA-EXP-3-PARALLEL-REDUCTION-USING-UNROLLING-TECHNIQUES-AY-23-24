@@ -1,9 +1,9 @@
 # PCA-EXP-3-PARALLEL-REDUCTION-USING-UNROLLING-TECHNIQUES AY 23-24
-<h3>AIM:</h3>
-<h3>SAMYUKTHA.S</h3>
-<h3>212225040363</h3>
+<h3>NAME:SAMYUKTHA.S</h3>
+<h3>REG.NO:212225040363</h3>
 <h3>EX. NO:3</h3>
-<h3>03-11-2026</h3>
+<h3>DATE:03-11-2026</h3>
+<h3>AIM:</h3>
 <h1> <align=center> PARALLEL REDUCTION USING UNROLLING TECHNIQUES </h3>
   Refer to the kernel reduceUnrolling8 and implement the kernel reduceUnrolling16, in which each thread handles 16 data blocks. Compare kernel performance with reduceUnrolling8 and use the proper metrics and events with nvprof to explain any difference in performance.</h3>
 
@@ -382,4 +382,4 @@ int main(int argc, char **argv)
 
 
 ## RESULT:
-Thus the program has been executed by unrolling by 8 and unrolling by 16. It is observed that _________ has executed with less elapsed time than _____________ with blocks_____,______.
+Thus the program has been executed by unrolling by 8 and unrolling by 16. It is observed that gpu unrolling16 has executed with less elapsed time than gpu unrolling8 with blocks 512,512.
